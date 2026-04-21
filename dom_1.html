@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+
+    <script>
+        function transfer(){
+            var bil1 = document.getElementById("textbox_bil1");
+            var bil2 = document.getElementById("textbox_bil2");
+
+            bil2.value = bil1.value;
+        }
+
+        function reset() {
+            var bil1 = document.getElementById("textbox_bil1");
+            var bil2 = document.getElementById("textbox_bil2"); 
+            
+            bil1.value = "";
+            bil2.value = "";
+        }
+    </script>
+
+    <body>
+        Bilangan 1:
+        <input type="text" name="bil1" id="textbox_bil1">
+        <br><br>
+
+        Bilangan 2:
+        <input type="text" name="bil2" id="textbox_bil2">
+        <br><br>
+
+        <input type="button" value="Transfer Data" onclick="transfer()">
+        <input type="button" value="Reset" onclick="reset()">
+    </body>
+</html>
